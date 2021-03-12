@@ -15,9 +15,9 @@ const News = (props) => {
 
 
     return (
-        <Jumbotron className="d-flex">
-            <img src={urlToImage} style={{ height: '200px' }, { width: '300px' }} alt="" />
-            <div className="mx-3">
+        <Jumbotron className="row">
+            <img src={urlToImage} className="col-md-5" alt="" />
+            <div className="mx-3 col-md-6">
                 <h2>{title}</h2>
                 <p>{description}</p>
                 <p>
