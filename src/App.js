@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 
 export const QueryContext = createContext();
 export const NewsContext = createContext();
+// adk
 
 function App() {
   const [query, setQuery] = useState({ category: "", pageSize: 10 });
