@@ -5,7 +5,7 @@ import "./spinner.css";
 const LoadingSpinner = () => {
   return (
     <Container className="text-center" id="loading">
-      <div class="lds-facebook">
+      <div className="lds-facebook">
         <div></div>
         <div></div>
         <div></div>

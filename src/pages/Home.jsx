@@ -7,10 +7,11 @@ import SingleNews from "../components/SingleNews";
 const Home = () => {
   const [query, setQuery] = useContext(QueryContext);
   const news = useContext(NewsContext);
+  console.log(news);
 
   return (
     <div className="px-md-5 pt-md-3">
-      {news.length ? (
+      {news.length > 0 ? (
         <>
           <HighLightNews news={news?.slice(0, 3)} />
 
