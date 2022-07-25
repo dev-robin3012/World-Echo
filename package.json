@@ -1,7 +1,7 @@
 {
   "name": "world-echo",
   "version": "0.1.1",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://gitname.github.io/World-Echo",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
