@@ -16,7 +16,9 @@ function App() {
       setIsFetching(true);
       try {
         const res = await fetch(
-          `https://newsdata.io/api/1/news?apikey=${process.env.REACT_APP_API_KEY3}&page=${query.pageSize}`
+          `https://newsdata.io/api/1/news?apikey=${process.env.REACT_APP_API_KEY3}&page=${
+            query.pageSize
+          }${query.category && "&q=" + query.category}`
         );
         const news = await res.json();
         setNews(news.results);
