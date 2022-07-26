@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/World-Echo/static/css/main.21dbbed2.chunk.css",
-    "main.js": "/World-Echo/static/js/main.c0ba895e.chunk.js",
-    "main.js.map": "/World-Echo/static/js/main.c0ba895e.chunk.js.map",
+    "main.js": "/World-Echo/static/js/main.c2f5db3a.chunk.js",
+    "main.js.map": "/World-Echo/static/js/main.c2f5db3a.chunk.js.map",
     "runtime-main.js": "/World-Echo/static/js/runtime-main.caf40237.js",
     "runtime-main.js.map": "/World-Echo/static/js/runtime-main.caf40237.js.map",
     "static/css/2.150d169a.chunk.css": "/World-Echo/static/css/2.150d169a.chunk.css",
@@ -11,13 +11,18 @@
     "index.html": "/World-Echo/index.html",
     "static/css/2.150d169a.chunk.css.map": "/World-Echo/static/css/2.150d169a.chunk.css.map",
     "static/css/main.21dbbed2.chunk.css.map": "/World-Echo/static/css/main.21dbbed2.chunk.css.map",
-    "static/js/2.4908ec94.chunk.js.LICENSE.txt": "/World-Echo/static/js/2.4908ec94.chunk.js.LICENSE.txt"
+    "static/js/2.4908ec94.chunk.js.LICENSE.txt": "/World-Echo/static/js/2.4908ec94.chunk.js.LICENSE.txt",
+    "static/media/Apple_logo.1d57d446.png": "/World-Echo/static/media/Apple_logo.1d57d446.png",
+    "static/media/No-news.203b7367.png": "/World-Echo/static/media/No-news.203b7367.png",
+    "static/media/addvertise.736f979b.jpg": "/World-Echo/static/media/addvertise.736f979b.jpg",
+    "static/media/google_play.ed983bb9.webp": "/World-Echo/static/media/google_play.ed983bb9.webp",
+    "static/media/world.5aa2e692.gif": "/World-Echo/static/media/world.5aa2e692.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.caf40237.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.4908ec94.chunk.js",
     "static/css/main.21dbbed2.chunk.css",
-    "static/js/main.c0ba895e.chunk.js"
+    "static/js/main.c2f5db3a.chunk.js"
   ]
 }
