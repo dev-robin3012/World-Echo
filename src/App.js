@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 
 export const QueryContext = createContext();
 export const NewsContext = createContext();
-// adk
 
 function App() {
   const [query, setQuery] = useState({ category: "", pageSize: 10 });
@@ -13,16 +12,20 @@ function App() {
   const [isFetching, setIsFetching] = useState(false);
 
   useEffect(() => {
-    setIsFetching(true);
-    fetch(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}&category=${query.category}&pageSize=${query.pageSize}&page=1`
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setNews(data.articles);
+    (async () => {
+      setIsFetching(true);
+      try {
+        const res = await fetch(
+          `https://newsdata.io/api/1/news?apikey=${process.env.REACT_APP_API_KEY3}&page=${query.pageSize}`
+        );
+        const news = await res.json();
+        setNews(news.results);
         setIsFetching(false);
-      })
-      .catch((err) => console.log(err));
+      } catch (error) {
+        setIsFetching(false);
+        console.log(error);
+      }
+    })();
   }, [query]);
 
   return (

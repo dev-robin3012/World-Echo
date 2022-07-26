@@ -1,31 +1,37 @@
 /* here create a spinner */
-.lds-facebook {
+
+#loading {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-.lds-facebook div {
+
+#loading div {
   display: inline-block;
   position: absolute;
   left: 8px;
   width: 16px;
   background: rgb(22, 19, 19);
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
-.lds-facebook div:nth-child(1) {
+
+#loading div:nth-child(1) {
   left: 8px;
   animation-delay: -0.24s;
 }
-.lds-facebook div:nth-child(2) {
+
+#loading div:nth-child(2) {
   left: 32px;
   animation-delay: -0.12s;
 }
-.lds-facebook div:nth-child(3) {
+
+#loading div:nth-child(3) {
   left: 56px;
   animation-delay: 0;
 }
-@keyframes lds-facebook {
+
+@keyframes loader {
   0% {
     top: 8px;
     height: 64px;

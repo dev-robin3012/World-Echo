@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Col, Form, InputGroup } from "react-bootstrap";
+import appleLogo from "../assets/Apple_logo.png";
+import googlePlay from "../assets/google_play.webp";
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
             className="bg-dark text-light py-2 px-4 rounded-pill d-flex align-items-center"
             role="button"
           >
-            <img src="/Apple_logo.png" alt="" height={40} />
+            <img src={appleLogo} alt="" height={40} />
             <div className="ml-2">
               <small className="m-0">Download From</small>
               <h5 className="m-0">Apple Store</h5>
@@ -21,7 +23,7 @@ const Footer = () => {
             className="bg-dark text-light py-2 px-4 rounded-pill d-flex align-items-center ml-3"
             role="button"
           >
-            <img src="/google_play.webp" alt="" height={40} />
+            <img src={googlePlay} alt="" height={40} />
             <div className="ml-2">
               <small className="m-0">Download From</small>
               <h5 className="m-0">Google Play</h5>

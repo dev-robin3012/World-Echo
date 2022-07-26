@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { QueryContext } from "../App";
+import world from "../assets/world.gif";
 
 const navItems = [
   "Business",
@@ -28,7 +29,7 @@ const NavBar = () => {
           onClick={() => setQuery({ ...query, category: "" })}
         >
           <h2 className="m-0">W</h2>
-          <img src="/world.gif" alt="" height={28} />
+          <img src={world} alt="" height={28} />
           <h2 className="m-0">RLD ECHO</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

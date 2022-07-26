@@ -1,22 +1,23 @@
 import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { NewsContext, QueryContext } from "../App";
+import advertise from "../assets/addvertise.jpg";
+import noNews from "../assets/No-news.png";
 import HighLightNews from "../components/HighLightNews";
 import SingleNews from "../components/SingleNews";
 
 const Home = () => {
   const [query, setQuery] = useContext(QueryContext);
   const news = useContext(NewsContext);
-  console.log(news);
 
   return (
     <div className="px-md-5 pt-md-3">
-      {news.length > 0 ? (
+      {news && news.length ? (
         <>
           <HighLightNews news={news?.slice(0, 3)} />
 
           <div className="my-2 text-center">
-            <img src="/addvertise.jpg" alt="" className="addvertise m-auto" />
+            <img src={advertise} alt="" className="addvertise m-auto" />
           </div>
 
           <div className="border-bottom border-top">
@@ -38,7 +39,7 @@ const Home = () => {
         </>
       ) : (
         <div className="text-center">
-          <img src="/No-news.png" alt="" />
+          <img src={noNews} alt="" />
         </div>
       )}
     </div>

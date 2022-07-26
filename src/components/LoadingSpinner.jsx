@@ -4,8 +4,11 @@ import "./spinner.css";
 
 const LoadingSpinner = () => {
   return (
-    <Container className="text-center" id="loading">
-      <div className="lds-facebook">
+    <Container
+      className="d-flex justify-content-center align-items-center"
+      style={{ height: "90vh" }}
+    >
+      <div id="loading">
         <div></div>
         <div></div>
         <div></div>
